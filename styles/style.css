@@ -156,7 +156,8 @@ li {
         display: none;
     }
     #developer{
-        top: 990px;
+        font-size: 15px;
+        top: 0px;
         right: 0;
     }
     #lunch{
