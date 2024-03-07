@@ -5,20 +5,24 @@ user.textContent = "使用者 : " + username
 var b1 = document.querySelector("#lunch");
 lunchdatabase = ["建弘","Yuki","熱食部/滷味","早餐部","水餃","烤鴨","麥味登",
 "建豆","Qburger","曼鯊鯊","去開發新世界","隨便","林家乾麵","老建","飴盛禾",
-"Ebisu 咖哩"];
-var ll = lunchdatabase.length - 1
+"Ebisu 咖哩","懿品小珍"];
+var ll = lunchdatabase.length
 b1.onclick = function () {
     var a = Math.floor(Math.random()*ll)
     alert("結果為: "+lunchdatabase[a]+" !")
+    var r = document.querySelector("#result")
+    r.textContent = "結果為 : "+lunchdatabase[a]
 }
 
 var b2 = document.querySelector("#dinner");
 dinnerdatabase = ["牛排", "咖哩豬排飯", "生魚片丼飯", "滷味", "水餃or鍋貼", 
 "知高飯", "鴨肉便當", "便當", "鴨肉冬粉", "鐵板燒", "三媽臭臭鍋/火鍋", "隨便"];
-var dl = dinnerdatabase.length - 1
+var dl = dinnerdatabase.length
 b2.onclick = function () {
     var a = Math.floor(Math.random()*dl)
     alert("結果為: "+dinnerdatabase[a]+" !")
+    var r = document.querySelector("#result")
+    r.textContent = "結果為 : "+dinnerdatabase[a]
 }
 
 var b3 = document.querySelector("#updatelun");
@@ -27,9 +31,11 @@ b3.onclick = function () {
     var answer1 = window.confirm("要沿用上次的自訂選項嗎?"+
     "\n"+"上一次的自訂選項為: "+customerdatabaselun)
     if (answer1 == true){
-        var cl = customerdatabaselun.length - 1
+        var cl = customerdatabaselun.length
         var a = Math.floor(Math.random()*cl)
         alert("結果為: "+customerdatabaselun[a]+" !")
+        var r = document.querySelector("#result")
+        r.textContent = "結果為 : "+customerdatabaselun[a]
     }else {
         var customer = window.prompt("請輸入自訂選項: (Ex: Qburger,肯德基,pizza )")
         if(customer == "") {
@@ -37,9 +43,11 @@ b3.onclick = function () {
         }
         else {
             customerdatabaselun = customer.split(",")
-            var cl = customerdatabaselun.length - 1
+            var cl = customerdatabaselun.length
             var a = Math.floor(Math.random()*cl)
             alert("結果為: "+customerdatabaselun[a]+" !")
+            var r = document.querySelector("#result")
+            r.textContent = "結果為 : "+customerdatabaselun[a]
         }
     }
 }
@@ -50,9 +58,11 @@ b4.onclick = function () {
     var answer1 = window.confirm("要沿用上次的自訂選項嗎?"+
     "\n"+"上一次的自訂選項為: "+customerdatabasedin)
     if (answer1 == true){
-        var cd = customerdatabasedin.length - 1
+        var cd = customerdatabasedin.length
         var a = Math.floor(Math.random()*cd)
         alert("結果為: "+customerdatabasedin[a]+" !")
+        var r = document.querySelector("#result")
+        r.textContent = "結果為 : "+customerdatabasedin[a]
     }else {
         var customer = window.prompt("請輸入自訂選項: (Ex: Qburger,肯德基,pizza )")
         if(customer == "") {
@@ -60,9 +70,11 @@ b4.onclick = function () {
         }
         else {
             customerdatabasedin = customer.split(",")
-            var cd = customerdatabasedin.length - 1
+            var cd = customerdatabasedin.length
             var a = Math.floor(Math.random()*cd)
             alert("結果為: "+customerdatabasedin[a]+" !")
+            var r = document.querySelector("#result")
+            r.textContent = "結果為 : "+customerdatabasedin[a]
         }
     }
 }
