@@ -145,7 +145,7 @@ li {
 
 
 
-@media(max-width: 430px){
+@media(max-width: 1000px){
     body {
         width: 375px;
         height: 1000px;
