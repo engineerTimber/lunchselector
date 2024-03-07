@@ -11,6 +11,12 @@ body {
 }
 #user {
     position: absolute;
+    top: 440px;
+    right: 400px;
+    font-size: 20px;
+}
+#developer {
+    position: absolute;
     top: 470px;
     right: 400px;
     font-size: 20px;
@@ -55,16 +61,16 @@ li {
     font-size: 20px;
     text-align: center;
     position: absolute;
-    top: 47%;
-    left: 700px;
+    top: 52%;
+    left: 46%;
 }
 #dinner{
     background-color: aqua;
     font-size: 20px;
     text-align: center;
     position: absolute;
-    top: 47%;
-    right: 700px;
+    top: 52%;
+    right: 46%;
 }
 .button:hover{
     background-color:#00539f;
@@ -74,15 +80,15 @@ li {
     background-color: rgb(255, 171, 255);
     font-size: 20px;
     position:absolute;
-    top: 60%;
-    left: 660px;
+    top: 65%;
+    left: 43%;
 }
 #updatedin{
     background-color: rgb(255, 171, 255);
     font-size: 20px;
     position:absolute;
-    top: 60%;
-    right: 660px;
+    top: 65%;
+    right: 43%;
 }
 #check{
     background-color: black;
@@ -94,7 +100,7 @@ li {
     font-size: 16px;
     font-weight: 1000;
     position: relative;
-    top: 40px;
+    top: 0;
 }
 #check:hover{
     background-color:rgb(255, 255, 255);
@@ -124,4 +130,72 @@ li {
     bottom: 1%;
     left: 0;
     background-color: rgb(249, 160, 255);
+}
+
+
+
+
+
+@media(max-width: 1200px){
+    body {
+        width: 375px;
+        height: 1000px;
+        margin:0 auto;
+        margin-bottom: 0;
+    }
+    #user{
+        top: 620px;
+        right: 10%;
+    }
+    #developer{
+        top: 650px;
+        right: 10%;
+    }
+    #lunch{
+        position: absolute;
+        top: auto;
+        left: 20%;
+    }
+    #dinner{
+        position: absolute;
+        top: auto ;
+        right: 20%;
+    }
+    #updatelun{
+        position:absolute;
+        top: auto;
+        left: 20%;
+    }
+    #updatedin{
+        position:absolute;
+        top: auto;
+        right: 20%;
+    }
+    #show1{
+        position: absolute;
+        bottom: -11%;
+        left: 0;
+    }
+    #show2{
+        position: absolute;
+        bottom: -21%;
+        left: 0;
+    }
+    #show3{
+        position: absolute;
+        bottom: -31%;
+        left: 0;
+    }
+    #show4{
+        position: absolute;
+        bottom: -41%;
+        left: 0;
+    }
+    #check {
+        top: 50px;
+    }
+    #check:hover{
+        background-color:rgb(0, 0, 0);
+        color:rgb(255, 255, 255);
+    }
 }

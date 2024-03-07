@@ -3,8 +3,9 @@ var user = document.querySelector("#user")
 user.textContent = "使用者 : " + username
 
 var b1 = document.querySelector("#lunch");
-lunchdatabase = ["牛排", "咖哩豬排飯", "生魚片丼飯", "滷味", "水餃or鍋貼", 
-"知高飯", "鴨肉便當", "便當", "鴨肉冬粉", "鐵板燒","三媽臭臭鍋/火鍋", "隨便"];
+lunchdatabase = ["建弘","Yuki","熱食部/滷味","早餐部","水餃","烤鴨","麥味登",
+"建豆","Qburger","曼鯊鯊","去開發新世界","隨便","林家乾麵","老建","飴盛禾",
+"Ebisu 咖哩"];
 var ll = lunchdatabase.length - 1
 b1.onclick = function () {
     var a = Math.floor(Math.random()*ll)
