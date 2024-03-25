@@ -182,22 +182,22 @@ li {
     }
     #show1{
         position: absolute;
-        bottom: -13%;
+        top: 700px;
         left: 0;
     }
     #show2{
         position: absolute;
-        bottom: -23%;
+        top: 780px;
         left: 0;
     }
     #show3{
         position: absolute;
-        bottom: -33%;
+        top: 860px;
         left: 0;
     }
     #show4{
         position: absolute;
-        bottom: -43%;
+        top: 920px;
         left: 0;
     }
     #result {
